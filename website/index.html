@@ -94,7 +94,7 @@
 	</div>
 
 <script>
-	const scrollTopBtn=document.getElementById("scrollTop");
+	let scrollTop = document.getElementById("scrollTop");
         windows.onscroll = function()
 	{scrollFunction()};
 
@@ -102,11 +102,11 @@
 	{
 		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
 		{
-			scrollTopBtn.style.display = "block";
+			scrollTop.style.display = "block";
 		}
 	else
 		{
-			scrollTopBtn.style.display = "none";
+			scrollTop.style.display = "none";
 		}
 	}
 
