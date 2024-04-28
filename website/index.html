@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<script src="js/script.js"></script>
 <style>
-	#scrollTop {
+	#scroll to Top {
 			display ; none;
 			position : fixed;
 			bottom : 17px;
@@ -69,15 +69,15 @@
 <!-- Three div sections -->
 	
 	<div style="display:flex;justify-content:space-between;">
-	<div style="height:450px;background-color:#7546;width:510px;">
+	<div style="height:500px;background-color:#7546;width:510px;">
 	<h1 style="height:40px;background-color:#789;width:400px;">HTML</h1><br>
 	Hello HTML.
 	</div>
-	<div style="height:450px;background-color:#7546;width:510px;">
+	<div style="height:500px;background-color:#7546;width:510px;">
 	<h1 style="height:40px;background-color:#789;width:400px;">CSS</h1><br>
 	Hey style
 	</div>
-	<div style="height:450px;background-color:#7546;width:510px;">
+	<div style="height:500px;background-color:#7546;width:510px;">
 	<h1 style="height:40px;background-color:#789;width:400px;">JavaScript</h1><br>
 	Hello world.
 	</div>
@@ -94,27 +94,20 @@
 	</div>
 
 <script>
-	let scrollTop = document.getElementById("scrollTop");
+	const scrollTopBtn = document.getElementById("scrollTopBtn");
         windows.onscroll = function()
-	{scrollFunction()};
 
-	function scrollFunction()
+// Scrolls down from the top.
 	{
 		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
 		{
-			scrollTop.style.display = "block";
+			scrollTopBtn.style.display = "block";
 		}
 	else
 		{
-			scrollTop.style.display = "none";
+			scrollTopBtn.style.display = "none";
 		}
-	}
-
-	function topFunction()
-	{
-		document.body.scrollTop = 0;
-		document.documentElement.scrollTop = 0;
-	}
+	};
 </script>
 
 </body>
