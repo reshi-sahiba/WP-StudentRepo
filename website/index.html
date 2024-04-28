@@ -6,6 +6,23 @@
 	<link rel="icon" type="image/png" href="res/img/favicon.png" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<script src="js/script.js"></script>
+<style>
+	#scrollTop {
+			display ; none;
+			position : fixed;
+			bottom : 17px;
+			right : 20px;
+			z-index : 99;
+			font-size : 17px;
+			border : none;
+			outline : none;
+			background-color : blue;
+			color : white;
+			cursor : pointer;
+			padding : 10px;
+			border-radius : 3px;
+		}
+</style>
 </head>
 
 <body>
@@ -75,6 +92,31 @@
 	<div id="footer" class="foot" >
 		<b>&copy; 2024 My Beautiful Website</b>
 	</div>
+
+<script>
+	const scrollTopBtn=document.getElementById("scrollTop");
+        windows.onscroll = function()
+	{scrollFunction()};
+
+	function scrollFunction()
+	{
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
+		{
+			scrollTopBtn.style.display = "block";
+		}
+	else
+		{
+			scrollTopBtn.style.display = "none";
+		}
+	}
+
+	function topFunction()
+	{
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}
+</script>
+
 </body>
 </html>
 
